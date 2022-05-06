@@ -19,8 +19,8 @@
 			<img id="v3" src="imagens/coracao_cheio.png">
 		</div>
 
-		<div class="cronometro">
-			tempo restante
+		<div class="cronometro"> Tempo Restante:
+			<span id="cronometro"></span>
 		</div>
 
 	</div>
@@ -28,7 +28,9 @@
 
 	<script type="text/javascript">
 
-		setInterval(function () {
+		document.getElementById('cronometro').innerHTML = tempo
+
+		var criamosca = setInterval(function () {
 			posicaoRandomica() 
 		}, 1000)
 		
